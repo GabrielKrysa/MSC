@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="553.0" prefWidth="864.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXML_EscolhaController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <AnchorPane id="AnchorPane" prefHeight="578.0" prefWidth="902.0" style="-fx-background-color: #B11623; -fx-text-inner-color: #cccccc;">
+               <children>
+                  <AnchorPane layoutX="165.0" layoutY="5.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="592.0" style="-fx-background-color: #292C37;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="136.0" AnchorPane.rightAnchor="136.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <JFXButton layoutX="173.0" layoutY="31.0" text=".">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="buttonVenda" buttonType="RAISED" layoutX="197.0" layoutY="176.0" onAction="#anchorPrimeiro" prefHeight="37.0" prefWidth="200.0" ripplerFill="RED" style="-fx-background-color: #CCCCCC; -fx-background-radius: 25;" text="Realizar Venda">
+                           <effect>
+                              <DropShadow color="WHITE" />
+                           </effect>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="buttonCadastraFunc" buttonType="RAISED" layoutX="197.0" layoutY="249.0" onAction="#anchorSegundo" prefHeight="37.0" prefWidth="200.0" ripplerFill="RED" style="-fx-background-color: #CCCCCC; -fx-background-radius: 25;" text="Cadastrar Funcionário">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="buttonHistorico" buttonType="RAISED" layoutX="197.0" layoutY="325.0" onAction="#anchorTerceiro" prefHeight="37.0" prefWidth="200.0" ripplerFill="RED" style="-fx-background-color: #CCCCCC; -fx-background-radius: 25;" text="Consultar Histórico">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXButton>
+                        <ImageView fitHeight="37.0" fitWidth="206.0" layoutX="194.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagens/menuescolha.png" />
+                           </image>
+                        </ImageView>
+                        <JFXButton fx:id="buttonCadastraFilme" buttonType="RAISED" layoutX="197.0" layoutY="396.0" onAction="#anchorQuarto" prefHeight="37.0" prefWidth="200.0" ripplerFill="RED" style="-fx-background-color: #CCCCCC; -fx-background-radius: 25;" text="Cadastrar Filme">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="buttonSair" buttonType="RAISED" layoutX="34.0" layoutY="535.0" onAction="#sair" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: #B11623; -fx-background-radius: 25;" text="SAIR" textFill="#cccccc" />
+                     </children>
+                  </AnchorPane>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </AnchorPane>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

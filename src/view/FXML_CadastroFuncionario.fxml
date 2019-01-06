@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #B11623;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXML_CadastroFuncionarioController">
+   <children>
+        <JFXButton fx:id="buttonCadastrar" onAction="#cadastrarFuncionario" prefHeight="25.0" prefWidth="166.0" ripplerFill="#4d2027" style="-fx-background-radius: 12;" styleClass="colors" stylesheets="@Style_telaEscolha.css" text="CADASTRAR FUNCIONÁRIO" textFill="WHITE" AnchorPane.bottomAnchor="28.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="536.0" />
+        <ImageView fitHeight="64.0" fitWidth="363.0" layoutX="129.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="496.0" AnchorPane.leftAnchor="127.0" AnchorPane.rightAnchor="138.61538696289062" AnchorPane.topAnchor="22.0">
+            <image>
+                <Image url="@../imagens/cadastroFuncionario.png" />
+            </image>
+        </ImageView>
+        <AnchorPane layoutX="47.0" layoutY="90.0" prefHeight="217.0" prefWidth="527.0" style="-fx-background-color: #292C37; -fx-background-radius: 25;">
+            <children>
+                <JFXTextField fx:id="textNomeCompleto" focusColor="#9f111b" layoutX="24.0" layoutY="58.0" prefHeight="25.0" prefWidth="426.0" promptText="NOME COMPLETO" style="-fx-text-fill: #cccccc;;" unFocusColor="#cccccc" />
+                <JFXTextField fx:id="textNumeroRegistro" focusColor="#9f111b" layoutX="24.0" layoutY="111.0" prefHeight="25.0" prefWidth="426.0" promptText="NÚMERO E REGISTRO CARTEIRA DE TRABALHO" style="-fx-text-fill: #cccccc;;" unFocusColor="#cccccc" AnchorPane.topAnchor="111.0" />
+                <JFXTextField fx:id="textCPF" focusColor="#9f111b" layoutX="24.0" layoutY="165.0" prefHeight="25.0" prefWidth="426.0" promptText="CPF" style="-fx-text-fill: #cccccc;;" unFocusColor="#cccccc" />
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="468.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../imagens/nome.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="468.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../imagens/numeroRegistro.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="150.0" fitWidth="30.0" layoutX="468.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../imagens/cpf.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="24.0" layoutY="10.0" prefHeight="17.0" prefWidth="193.0" text="INFORMAÇÕES BASICAS" textFill="#cccccc">
+                    <effect>
+                        <Lighting>
+                            <bumpInput>
+                                <Shadow />
+                            </bumpInput>
+                        </Lighting>
+                    </effect>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="47.0" layoutY="314.0" prefHeight="185.0" prefWidth="527.0" style="-fx-background-color: #292C37; -fx-background-radius: 25;">
+            <children>
+                <Label layoutX="25.0" layoutY="14.0" prefHeight="17.0" prefWidth="193.0" text="INFORMAÇÕES DE LOGIN" textFill="#cccccc">
+                    <effect>
+                        <Lighting>
+                            <bumpInput>
+                                <Shadow />
+                            </bumpInput>
+                            <light>
+                            </light>
+                        </Lighting>
+                    </effect>
+                </Label>
+                <JFXTextField fx:id="textLogin" focusColor="#9f111b" layoutX="25.0" layoutY="51.0" prefHeight="25.0" prefWidth="432.0" promptText="LOGIN" style="-fx-text-fill: #cccccc;;" unFocusColor="#cccccc" />
+                <JFXPasswordField fx:id="passwordSenha" focusColor="#9f111b" layoutX="25.0" layoutY="95.0" prefHeight="25.0" prefWidth="432.0" promptText="SENHA" style="-fx-text-fill: #cccccc;;" unFocusColor="#cccccc" />
+                <JFXPasswordField fx:id="passwordRepitaSenha" focusColor="#9f111b" layoutX="25.0" layoutY="134.0" prefHeight="25.0" prefWidth="432.0" promptText="REPITA A SENHA" style="-fx-text-fill: #cccccc;;" unFocusColor="#cccccc" />
+                <ImageView fitHeight="150.0" fitWidth="30.0" layoutX="469.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../imagens/userLogin.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="50.0" fitWidth="44.0" layoutX="462.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../imagens/senha.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </children> 
+</AnchorPane>

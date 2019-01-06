@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorQuarto" prefHeight="566.0" prefWidth="631.0" style="-fx-background-color: #B11623;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXML_CadastroFilmeController">
+   <children>
+      <Label layoutX="36.0" layoutY="91.0" prefHeight="25.0" prefWidth="152.0" text="Data do Lançamento" textFill="#cccccc">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="138.0" prefHeight="25.0" prefWidth="140.0" text="Data Encerramento" textFill="#cccccc">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="185.0" prefHeight="25.0" prefWidth="116.0" text="Data pré-estréia" textFill="#cccccc">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="98.0" layoutY="317.0" prefHeight="25.0" prefWidth="89.0" text="Visualização" textFill="#cccccc">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="133.0" layoutY="404.0" prefHeight="25.0" prefWidth="53.0" text="Genêro" textFill="#cccccc">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelQtdVendas" layoutX="129.0" layoutY="452.0" prefHeight="25.0" prefWidth="61.0" text="Duração" textFill="#cccccc">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dateEstreia" layoutX="208.0" layoutY="91.0" prefHeight="25.0" prefWidth="235.0" style="-fx-texte-inner-color: #000000;" />
+      <DatePicker fx:id="dateFinal" layoutX="208.0" layoutY="138.0" prefHeight="25.0" prefWidth="235.0" style="-fx-background-color: #cccccc;" />
+      <DatePicker fx:id="datePreEstreia" layoutX="208.0" layoutY="185.0" prefHeight="25.0" prefWidth="235.0" style="-fx-background-color: #cccccc;" />
+      <JFXComboBox fx:id="comboBoxVisualização" focusColor="#cccccc" layoutX="208.0" layoutY="317.0" prefHeight="25.0" prefWidth="235.0" />
+      <JFXComboBox fx:id="comboBoxClassificacao" focusColor="#cccccc" layoutX="208.0" layoutY="361.0" prefHeight="25.0" prefWidth="235.0" />
+      <JFXComboBox fx:id="comboBoxGenero" focusColor="#cccccc" layoutX="208.0" layoutY="404.0" prefHeight="25.0" prefWidth="235.0" visibleRowCount="5" />
+      <JFXTextField fx:id="textDuracao" focusColor="#cccccc" layoutX="208.0" layoutY="452.0" prefHeight="25.0" prefWidth="235.0" />
+      <JFXTextField fx:id="textTitulo" focusColor="#cccccc" layoutX="208.0" layoutY="495.0" prefHeight="25.0" prefWidth="235.0" />
+      <JFXButton fx:id="buttonCadastrar" buttonType="RAISED" layoutX="503.0" layoutY="508.0" onAction="#cadastraFilme" style="-fx-background-color: #ae4650;" text="CADASTRAR" textFill="#cccccc">
+         <effect>
+            <Glow level="0.59" />
+         </effect>
+      </JFXButton>
+      <ImageView fitHeight="58.0" fitWidth="316.0" layoutX="158.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/cadastroFilme.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="143.0" layoutY="495.0" prefHeight="25.0" prefWidth="44.0" text="Titulo" textFill="#cccccc">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="98.0" layoutY="361.0" prefHeight="25.0" prefWidth="89.0" text="Classificação" textFill="#cccccc">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="230.0" prefHeight="25.0" prefWidth="107.0" text="Escolha de sala" textFill="#cccccc">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="272.0" prefHeight="25.0" prefWidth="116.0" text="Escolha Horário" textFill="#cccccc">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="comboBoxEscolhaSalaCadastro" focusColor="#cccccc" layoutX="208.0" layoutY="230.0" prefHeight="25.0" prefWidth="235.0" />
+      <JFXComboBox fx:id="comboBoxEscolhaHorario" focusColor="#cccccc" layoutX="208.0" layoutY="272.0" prefHeight="25.0" prefWidth="235.0" />
+   </children>
+</AnchorPane>

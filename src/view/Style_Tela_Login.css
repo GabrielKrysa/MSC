@@ -1,0 +1,24 @@
+
+.root{
+    -fx-background-image:  url('../imagens/tela_login_cinema1.jpg');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: cover;
+}
+
+.colors{
+
+    -fx-background-color: #00000070;
+    -fx-background-radius: 12; 
+    -fx-opacity: 20;    
+}
+
+.text_field{
+    -fx-text-fill: #cccccc;
+    -fx-prompt-text-fill: white;
+}
+
+.button{
+    -fx-background-color: white;
+}
+

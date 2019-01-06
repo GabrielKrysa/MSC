@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.cell.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="719.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXML_VendaController">
+   <children>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="735.0" style="-fx-background-color: #cccccc;">
+         <children>
+            <JFXButton fx:id="btnEscolherPoltronas" layoutX="30.0" layoutY="298.0" onAction="#btnEscolherPoltronasOnAction" prefHeight="30.0" prefWidth="669.0" ripplerFill="RED" style="-fx-background-color: #B11623;" text="ESCOLHER POLTRONAS" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="28.0" layoutY="37.0" text="Selecione o filme:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tabelaFilmes" layoutX="29.0" layoutY="66.0" prefHeight="218.0" prefWidth="341.0" stylesheets="@../../style/JfoenixStyleSheet.css">
+               <columns>
+                  <TableColumn fx:id="idFilme" maxWidth="90.0" prefWidth="90.0" resizable="false" text="Identificador">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="id" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn fx:id="nome" prefWidth="250.0" resizable="false" text="Nome">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="nome" />
+                     </cellValueFactory>
+                  </TableColumn>
+               </columns>
+            </TableView>
+            <Label layoutX="412.0" layoutY="37.0" text="Selecione a sala:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="560.0" layoutY="37.0" text="Selecione o horário:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="ComboBoxSala" focusColor="#b11623" layoutX="411.0" layoutY="66.0" prefHeight="57.0" prefWidth="116.0" />
+            <JFXComboBox fx:id="ComboBoxHorario" focusColor="#b11623" layoutX="561.0" layoutY="66.0" prefHeight="57.0" prefWidth="138.0" />
+            <JFXButton fx:id="buttonValidar" layoutX="414.0" layoutY="188.0" onAction="#verificaSalaHorario" prefHeight="26.0" prefWidth="293.0" style="-fx-background-color: #B11623;" text="VALIDAR SALA E HORARIOS" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

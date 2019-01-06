@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="585.0" prefWidth="951.0" style="-fx-background-color: #B11623;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXML_VerHistoricoController">
+    <children>
+        <ImageView fitHeight="46.0" fitWidth="305.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../imagens/histórico.png" />
+            </image>
+        </ImageView>
+      <TextArea fx:id="textAreaHistorico" editable="false" layoutX="19.0" layoutY="74.0" prefHeight="491.0" prefWidth="911.0">
+         <font>
+            <Font size="16.0" />
+         </font></TextArea>
+      <JFXButton layoutX="760.0" layoutY="28.0" onAction="#mostraHistorico" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #cccccc;" text="MOSTRAR HISTORICO" />
+    </children>
+</AnchorPane>

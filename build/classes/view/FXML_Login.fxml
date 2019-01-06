@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="650.0" maxWidth="800.0" minHeight="430.0" minWidth="800.0" prefHeight="650.0" prefWidth="800.0" styleClass="root" stylesheets="@Style_Tela_Login.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXML_LoginController">
+   <children>
+      <VBox alignment="BOTTOM_LEFT" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="65.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER">
+               <children>
+                  <AnchorPane layoutX="285.0" layoutY="17.0" prefHeight="383.0" prefWidth="321.0" styleClass="colors" stylesheets="@Style_Tela_Login.css">
+                     <children>
+                        <ImageView fitHeight="52.0" fitWidth="173.0" layoutX="85.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagens/EscritoLogin.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="12.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagens/icon_user.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="12.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagens/icon_lock.png" />
+                           </image>
+                        </ImageView>
+                        <JFXTextField fx:id="textUsuario" focusColor="#cccccc" layoutX="45.0" layoutY="144.0" onAction="#verificaShortcutsUser" prefHeight="25.0" prefWidth="261.0" promptText="Usuário" styleClass="text_field" stylesheets="@Style_Tela_Login.css" />
+                        <JFXPasswordField fx:id="textSenha" focusColor="#cccccc" layoutX="45.0" layoutY="200.0" onAction="#verificaShortcuts" prefHeight="25.0" prefWidth="261.0" promptText="Senha" styleClass="text_field" stylesheets="@Style_Tela_Login.css" />
+                        <JFXButton fx:id="buttonEntrar" layoutX="19.0" layoutY="308.0" onAction="#login" prefHeight="52.0" prefWidth="283.0" styleClass="colors" stylesheets="@Style_Tela_Login.css" text="ENTRAR" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutY="2.0" prefHeight="195.0" prefWidth="800.0" AnchorPane.bottomAnchor="460.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="184.0" prefWidth="357.0">
+               <children>
+                  <AnchorPane prefHeight="207.0" prefWidth="570.0" styleClass="colors" stylesheets="@Style_Tela_Login.css">
+                     <children>
+                        <ImageView fitHeight="412.0" fitWidth="570.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagens/tituloLogin.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <JFXButton buttonType="RAISED" cacheHint="QUALITY" contentDisplay="CENTER" layoutX="14.0" layoutY="611.0" nodeOrientation="LEFT_TO_RIGHT" onAction="#sobreMSC" prefHeight="25.0" prefWidth="147.0" style="-fx-background-color: #ffffff70;" text="Sobre MSC" textOverrun="CLIP" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" />
+   </children>
+</AnchorPane>

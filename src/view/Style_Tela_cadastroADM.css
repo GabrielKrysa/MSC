@@ -1,0 +1,36 @@
+
+.root{
+    -fx-background-image:  url('../imagens/tela_cadastro_adm.jpg');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: cover;
+}
+
+.colors{
+
+    -fx-background-color: #000000cc;
+    -fx-background-radius: 12; 
+    -fx-opacity: 20;    
+}
+
+.text_field{
+    -fx-text-fill: #cccccc;
+    -fx-prompt-text-fill: white;
+    -fx-focus-color: white;
+}
+
+
+.button{
+    -fx-text-fill: black;
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+}
+
+.label{
+    -fx-text-fill: white;
+     font-size: 14px;
+}
+
+.labelTitulo{
+    font-size: large;
+}

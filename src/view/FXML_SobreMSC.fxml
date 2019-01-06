@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="519.0" prefWidth="596.0" styleClass="root" stylesheets="@Style_tela_SobreMSC.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXML_SobreMSCController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="293.0" prefWidth="536.0">
+               <children>
+                  <AnchorPane prefHeight="293.0" prefWidth="503.0">
+                     <children>
+                        <Text layoutX="25.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MSC é um software voltado para cinemas. Criado sob medida para somente uma empresa, MSC foi moldado para a estrutura do mesmo. O sistema foi criado com o objetivo de facilitar algumas atividades comuns do dia a dia de um cinema, como por exemplo, reserva de sala para a transmissão de um filme, ou a venda de ingressos para o público, ou até mesmo o cadastro de filmes que estarão em cartaz." textAlignment="CENTER" wrappingWidth="453.13671875">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="25.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MSC foi desenvolvido em um projeto que integra três matéria acadêmicas de curso de ciência da computação: Engenharia de Software II, Banco de dados II, Programação orientada a objetos II." textAlignment="CENTER" wrappingWidth="453.13671875">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="25.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A aplicação foi desenvolvida por Gabriel Krysa, Mark Willian de Lima Geffer e Tiago Alves dos Santos." textAlignment="CENTER" wrappingWidth="453.13671875">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </children></HBox>
+         </children>
+      </VBox>
+      <JFXButton fx:id="buttonVoltar" onAction="#voltar" text="VOLTAR" textFill="WHITE" underline="true" />
+   </children>
+</AnchorPane>

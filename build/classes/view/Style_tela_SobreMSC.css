@@ -1,0 +1,16 @@
+
+.root{
+    -fx-background-image:  url('../imagens/TelasobreMSC.jpg');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: cover;
+}
+/*
+primaryStage.initStyle(StageStyle.UNDECORATED);
+
+        Group root = new Group();
+        Scene scene = new Scene(root, 100, 100);
+
+        primaryStage.setScene(scene);
+        primaryStage.show();
+*/
